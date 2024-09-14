@@ -1,0 +1,70 @@
+/* Container for the search bar with shadow and background color */
+
+body{
+  background-color:rgb(128, 211, 179);
+  margin:10px;
+  margin-top:200px;
+  Border:1px black solid;
+  border-radius:20px;
+  Padding:20px;
+
+}
+.search-container {
+  position: relative;
+  max-width: 600px; /* Adjust as needed */
+  margin: 20px auto; /* Centered with some top margin */
+  padding: 20px;
+  background-color: skyblue; /* Skyblue background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for elevation */
+}
+
+/* Input field styling */
+.search-input {
+  width: 100%;
+  padding: 12px 15px; /* Added padding for comfort */
+  font-size: 16px;
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 8px; /* Rounded corners */
+  box-sizing: border-box; /* Includes padding and border in width */
+  outline: none; /* Removes default focus outline */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+/* Input focus state */
+.search-input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Light blue shadow on focus */
+}
+
+/* Suggestions list styling */
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px; /* Space between input and suggestions */
+  border: 1px solid #ddd; /* Matching border color */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background for suggestions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Consistent shadow effect */
+  max-height: 250px; /* Max height for suggestions */
+  overflow-y: auto; /* Scrollable if needed */
+}
+
+/* Individual suggestion styling */
+.suggestions-list li {
+  padding: 12px 15px; /* Consistent padding */
+  background-color: #fff; /* White background for list items */
+  border-bottom: 1px solid #ddd; /* Divider between items */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+/* Last item styling */
+.suggestions-list li:last-child {
+  border-bottom: none; /* No border for the last item */
+}
+
+/* Hover state for suggestions */
+.suggestions-list li:hover {
+  background-color: #f1f1f1; /* Light gray background on hover */
+}
